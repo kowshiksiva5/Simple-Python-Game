@@ -191,12 +191,12 @@ def whowin(w1, w2):
         moving[1] = temp
     if w1 == w2:
         if time_arr[0] > time_arr[1]:
-            message_display4('player1 wins')
+            message_display4('player2 wins')
             temp = moving[0]
             temp = temp + 10
             moving[0] = temp
         if time_arr[1] > time_arr[0]:
-            message_display4('player2wins')
+            message_display4('player1wins')
             temp = moving[1]
             temp = temp + 1
             moving[1] = temp
