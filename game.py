@@ -179,7 +179,6 @@ def whowin(w1, w2):
     obstacles.clear()
     fixedobstacles.clear()
     fixedobstacles2.clear()
-    print(moving[0], moving[1])
     if w1 > w2:
         message_display4('player1 wins')
         temp = moving[0]
@@ -190,7 +189,6 @@ def whowin(w1, w2):
         temp = moving[1]
         temp = temp + 1
         moving[1] = temp
-    print(moving[0], moving[1])
     if w1 == w2:
         if time_arr[0] > time_arr[1]:
             message_display4('player1 wins')
@@ -255,7 +253,6 @@ def game_loop():
         if var[0] == 1:
             for x in range(0, 10):
                 k = GameObject(movingobsImg, moving[0], a[x], arr[x])
-                print(moving[0], moving[1])
 
                 obstacles.append(k)
             for x in range(0, 4):
@@ -335,10 +332,8 @@ def game_loop2():
 
         # for obstacles
         if var[1] == 1:
-            print(var[0], var[1])
             for x in range(0, 10):
                 k = GameObject(movingobsImg, moving[0], a[x], arr[x])
-                print(moving[0], moving[1])
 
                 obstacles2.append(k)
             for x in range(0, 4):
